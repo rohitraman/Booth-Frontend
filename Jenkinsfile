@@ -27,8 +27,8 @@ pipeline {
         stage ('Trigger Downstream Job') {
             steps {
                 build(job: 'Voting Booth', parameters: [
-                    string(name: 'city', value: '%city%'),
-                    string(name : 'port', value : '%port%')
+                    string(name: 'city', value: city),
+                    string(name : 'port', value : port)
                 ])
             }
         }
