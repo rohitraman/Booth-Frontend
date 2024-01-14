@@ -20,7 +20,7 @@ pipeline {
                 }
 
                 script {
-                    bat "echo VITE_PUBLIC_URL=http://%city:%port% >> .env" 
+                    bat "echo VITE_PUBLIC_URL=http://%city:%port%/api >> .env" 
                 }
             }
         }
