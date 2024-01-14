@@ -1,0 +1,32 @@
+.bg-header {
+    background-color: #1a257d !important;
+}
+.button-style-header {
+    border: none;
+    background: none;
+    color: black;
+    margin-bottom: 1%;
+    font-weight: 500;
+    width: 100%;
+    font-size: 16px;
+
+}
+.btn-menu {
+    transition: 0.4s;
+    padding: 15px;
+}
+.btn-menu:hover {
+    background-color: #e4dede;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.logout-button {
+    transition: 0.4s;
+    padding: 5%;
+}
+
+.logout-button:hover {
+    background-color: #f45a5a;
+    border-radius: 20px;
+}

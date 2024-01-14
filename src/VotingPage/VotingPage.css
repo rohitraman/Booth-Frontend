@@ -1,0 +1,14 @@
+.vote-form {
+    width: 72%;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.vote-heading {
+    font-weight: 500;
+    margin-left: 38%;
+}
+
+body {
+    background-image: image("../assets/india-election.jpg");
+}

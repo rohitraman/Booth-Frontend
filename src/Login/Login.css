@@ -1,0 +1,19 @@
+.button-style {
+    width: 67%;
+    margin-left: 16%;
+    margin-right: 15%;
+    margin-top : 2%
+}
+
+.heading {
+    text-align: center;
+    font-weight: 400;
+}
+
+.radio-style {
+    text-align: center;
+}
+
+.form-login {
+    margin: 10% 35% 15% 2%;
+}

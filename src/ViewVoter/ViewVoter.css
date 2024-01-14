@@ -1,0 +1,17 @@
+.table-style {
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.view-nom-heading {
+    font-weight: 400;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+}
+
+.btn-delete {
+    padding: 5px 8px !important;
+    margin: 2%
+}
