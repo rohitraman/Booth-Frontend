@@ -13,7 +13,7 @@ pipeline {
                 }
 
                 script {
-                    bat "echo VITE_PUBLIC_URL=http://%city%:%port%/api >> .env" 
+                    bat "echo VITE_PUBLIC_URL=http://localhost:%port%/api >> .env" 
                 }
             }
         }
