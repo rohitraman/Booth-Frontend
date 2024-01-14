@@ -2,13 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Build Docker image') {
-            steps {
-                script {
-                    bat 'docker build -t booth-frontend .'
-                }
-            }
-        }
         stage ('Update .env') {
             steps {
                 script {
@@ -21,6 +14,13 @@ pipeline {
 
                 script {
                     bat "echo VITE_PUBLIC_URL=http://%city%:%port%/api >> .env" 
+                }
+            }
+        }
+        stage('Build Docker image') {
+            steps {
+                script {
+                    bat 'docker build -t booth-frontend .'
                 }
             }
         }
