@@ -74,6 +74,7 @@ function VotingPage() {
         // Change ID
         fetch(import.meta.env.VITE_PUBLIC_URL + "/voter/getNomineesByCity?city=" + import.meta.env.VITE_CITY + "&id=" + user.emailId, {
             headers: {
+                'Content-Type' : 'application/json',
                 'Authorization' : 'Bearer ' + localStorage.getItem("token")
             }
         }).then((res) => res.json())

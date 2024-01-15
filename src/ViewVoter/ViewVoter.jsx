@@ -15,6 +15,7 @@ function ViewVoter() {
     useEffect(() => {
         fetch(import.meta.env.VITE_PUBLIC_URL + "/voter/viewVoters", {
             headers: {
+                'Content-Type' : 'application/json',
                 'Authorization' : 'Bearer ' + localStorage.getItem("token")
             }
         }).then((res) => res.json())
