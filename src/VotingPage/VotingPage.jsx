@@ -78,7 +78,10 @@ function VotingPage() {
             }
         }).then((res) => res.json())
         .then((res) => {
+            console.log(res);
             setNominees(res.obj);
+        }).catch((e) => {
+            console.log(e);
         })
     }, [])
     return (
