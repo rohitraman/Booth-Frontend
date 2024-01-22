@@ -17,22 +17,6 @@ pipeline {
                 }
             }
         }
-        stage('Remove old Docker image') {
-            steps {
-                script {
-                    catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
-                        bat 'docker rmi booth-frontend'
-                    }
-                }
-            }
-        }
-        stage('Build Docker image') {
-            steps {
-                script {
-                    bat 'docker build -t booth-frontend .'
-                }
-            }
-        }
         stage ('Trigger Downstream Job') {
             steps {
                 build(job: 'Voting Booth', parameters: [
