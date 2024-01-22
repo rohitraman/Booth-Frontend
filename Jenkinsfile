@@ -2,6 +2,13 @@ pipeline {
     agent any
     
     stages {
+        stage('Build Docker image') {
+            steps {
+                script {
+                    bat 'docker build -t booth-frontend .'
+                }
+            }
+        }
         stage ('Update .env') {
             steps {
                 script {
